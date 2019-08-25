@@ -8,18 +8,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/PersonController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/PersonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/repository/PersonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/repository/PersonRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/controller/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/service/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/repository/PersonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/controller/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/controller/PersonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/controller/PersonController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/model/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/repository/PersonRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/service/PersonService.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +42,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1PsnZu2xqSsq1yRKQfdamjJHhGX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -65,6 +65,9 @@
       <recent name="pl.marek" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.marek.imagene3.service" />
+      <recent name="pl.marek.imagene3.repository" />
+      <recent name="pl.marek.imagene3.utils" />
       <recent name="utils.repository" />
       <recent name="pl.marek.imagene3.controller" />
     </key>
@@ -81,7 +84,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.Imagene3Application">
+    <configuration name="CommonLogic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.marek.imagene3.utils.CommonLogic" />
+      <module name="imagene3.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.marek.imagene3.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Imagene3Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="imagene3.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.marek.imagene3.Imagene3Application" />
@@ -89,6 +105,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CommonLogic" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -103,6 +124,8 @@
       <workItem from="1566671732576" duration="3790000" />
       <workItem from="1566683494404" duration="5273000" />
       <workItem from="1566692361341" duration="2410000" />
+      <workItem from="1566755262653" duration="15726000" />
+      <workItem from="1566776325279" duration="14000" />
     </task>
     <servers />
   </component>

@@ -1,13 +1,16 @@
 package pl.marek.imagene3.model;
 
-import javax.persistence.Entity;
+import org.hibernate.validator.constraints.Length;
+
+import javax.persistence.*;
 
 @Entity
 public class User {
+    //
 //  **Rejestracja i logowanie użytkownika
-//    Rejestracja wymaga podania hasła dłuższego niż 7 znaków i zawierającego przynajmniej jedną cyfrę.
-//    Przy rejestracji system nadaje unikatowy, "trudny do odgadnięcia" identyfikator użytkownika.
-//    Logowanie przy pomocy identyfikatora i hasła tworzy sesję, wymaganą do dalszej pracy.
+//ok   Rejestracja wymaga podania hasła dłuższego niż 7 znaków i zawierającego przynajmniej jedną cyfrę.
+//ok   Przy rejestracji system nadaje unikatowy, "trudny do odgadnięcia" identyfikator użytkownika.
+//ok   Logowanie przy pomocy identyfikatora i hasła tworzy sesję, wymaganą do dalszej pracy.
 //  **Dodawanie wariantów
 //    Końcówka niewymagająca autoryzacji.
 //    Pozwala na dodanie nowego wariantu.
@@ -22,4 +25,37 @@ public class User {
 //    Każdy użytkownik może mieć wiele wariantów, ale tylko jeden wariant o tych samych polach position, alteration, chromosome.
 //  **Pobieranie wariantów
 //    Zwraca listę wariantów (same opisy) aktualnie zalogowanego użytkownika.
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(unique = true)
+    private String userid;
+
+    @Length(min = 8)
+    private String password;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getUserid() {
+        return userid;
+    }
+
+    public void setUserid(String userid) {
+        this.userid = userid;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
