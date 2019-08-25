@@ -1,7 +1,9 @@
-package pl.marek.imagene3;
+package pl.marek.imagene3.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import pl.marek.imagene3.model.Person;
+import pl.marek.imagene3.service.PersonService;
 
 import java.util.List;
 

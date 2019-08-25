@@ -1,4 +1,4 @@
-package pl.marek.imagene3;
+package pl.marek.imagene3.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

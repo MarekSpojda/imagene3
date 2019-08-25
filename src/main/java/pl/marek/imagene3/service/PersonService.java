@@ -1,7 +1,8 @@
-package pl.marek.imagene3;
+package pl.marek.imagene3.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import pl.marek.imagene3.model.Person;
 import pl.marek.imagene3.repository.PersonRepository;
 
 import java.util.ArrayList;
