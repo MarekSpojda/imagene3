@@ -18,12 +18,16 @@ public class LoginController {
 
     @PostMapping("/login")
     public String login(@RequestBody User user, HttpSession session) {
+        if (userService.getUserByUserid(user.getUserid()) == null) {
+            return "User not registered";
+        }
+
         User userFromDatabase = userService.getUserByUserid(user.getUserid());
         boolean passwordOK = passwordEncoder.matches(user.getPassword(), userFromDatabase.getPassword());
 
         if (passwordOK) {
             session.setAttribute("loggedIn", user.getUserid());
-            return "Logged in, " + session.getAttribute("loggedIn");
+            return "Logged in user " + session.getAttribute("loggedIn");
         }
         return "Login failed";
     }

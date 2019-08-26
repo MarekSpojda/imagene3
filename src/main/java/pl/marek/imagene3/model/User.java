@@ -3,31 +3,10 @@ package pl.marek.imagene3.model;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class User {
-    //
-//  **Rejestracja i logowanie użytkownika
-//ok   Rejestracja wymaga podania hasła dłuższego niż 7 znaków i zawierającego przynajmniej jedną cyfrę.
-//ok   Przy rejestracji system nadaje unikatowy, "trudny do odgadnięcia" identyfikator użytkownika.
-//ok   Logowanie przy pomocy identyfikatora i hasła tworzy sesję, wymaganą do dalszej pracy.
-
-//  **Dodawanie wariantów
-//    Końcówka niewymagająca autoryzacji.
-//    Pozwala na dodanie nowego wariantu.
-//    Aktualizacja wariantu jest zabroniona.
-//    Wariant to rekord składający się z następujących pól:
-//    position (long int),
-//    alteration (string),
-//    chromosome (string),
-//    opis (string, nawet kilka tysięcy znaków).
-
-//  **Przypisanie wariantu do użytkownika
-//    Końcówka niewymagająca autoryzacji.
-//    Każdy użytkownik może mieć wiele wariantów, ale tylko jeden wariant o tych samych polach position, alteration, chromosome.
-
-//  **Pobieranie wariantów
-//    Zwraca listę wariantów (same opisy) aktualnie zalogowanego użytkownika.
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -37,6 +16,9 @@ public class User {
 
     @Length(min = 8)
     private String password;
+
+    @OneToMany
+    private List<Variant> variants;
 
     public Long getId() {
         return id;
@@ -60,5 +42,13 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public List<Variant> getVariants() {
+        return variants;
+    }
+
+    public void setVariants(List<Variant> variants) {
+        this.variants = variants;
     }
 }

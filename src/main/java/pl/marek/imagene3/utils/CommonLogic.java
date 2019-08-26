@@ -12,7 +12,7 @@ public class CommonLogic {
             '-', '+', '<', '>', '*', '/'};
 
     public static String checkPassword(String password) throws Exception {
-        String passwordRegex = "^.+\\d.+$";
+        String passwordRegex = "^.*\\d.*$";
         Pattern pattern = Pattern.compile(passwordRegex);
         Matcher matcher = pattern.matcher(password);
         if (!matcher.matches()) {
@@ -22,7 +22,6 @@ public class CommonLogic {
     }
 
     public static String makeUserId() {
-        //Caution - so far it's not checking here if id is unique!
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i < 25; i++) {
             stringBuilder.append(FRAGMENTS[(int) (Math.random() * FRAGMENTS.length)]);

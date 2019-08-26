@@ -23,7 +23,11 @@ public class UserController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public Long registerUser(@RequestBody String password) throws Exception {
+    public String registerUser(@RequestBody String password) throws Exception {
+        if (password.length() < 8) {
+            return "Password length less than 8";
+        }
+
         User user = new User();
         user.setPassword(passwordEncoder.encode(CommonLogic.checkPassword(password)));
         boolean isUnique = false;
@@ -37,7 +41,7 @@ public class UserController {
                 isUnique = false;
             }
         }
-        return user.getId();
+        return "User created";
     }
 
     @RequestMapping(method = RequestMethod.GET)

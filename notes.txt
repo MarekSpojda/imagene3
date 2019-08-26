@@ -1,0 +1,3 @@
+Użyta baza danych                   :   H2 przechowywana w pamięci
+Sposób testowania                   :   manualnie poprzez program Postman
+System, na którym stawiano projekt  :   Linux Ubuntu

@@ -11,17 +11,20 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/controller/PersonController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/model/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/controller/VariantController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/controller/VariantController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/repository/PersonRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/service/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/service/PersonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/repository/VariantRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/repository/VariantRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/service/VariantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/service/VariantService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/utils/CommonLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/pl/marek/imagene3/utils/CommonLogic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/controller/VariantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/controller/VariantController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/service/LoginService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/repository/VariantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/repository/VariantRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/service/VariantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/service/VariantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/utils/CommonLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/marek/imagene3/utils/CommonLogic.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,6 +134,7 @@
       <workItem from="1566755262653" duration="15726000" />
       <workItem from="1566776325279" duration="14000" />
       <workItem from="1566784511087" duration="1997000" />
+      <workItem from="1566824195038" duration="11211000" />
     </task>
     <servers />
   </component>
