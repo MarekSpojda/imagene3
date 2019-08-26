@@ -3,19 +3,16 @@ package pl.marek.imagene3.controller;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import pl.marek.imagene3.model.User;
-import pl.marek.imagene3.service.LoginService;
 import pl.marek.imagene3.service.UserService;
 
 import javax.servlet.http.HttpSession;
 
 @RestController
 public class LoginController {
-    private final LoginService loginService;
     private final UserService userService;
     private BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
-    public LoginController(LoginService loginService, UserService userService) {
-        this.loginService = loginService;
+    public LoginController(UserService userService) {
         this.userService = userService;
     }
 
@@ -26,7 +23,7 @@ public class LoginController {
 
         if (passwordOK) {
             session.setAttribute("loggedIn", user.getUserid());
-            return "Logged in, "+session.getAttribute("loggedIn");
+            return "Logged in, " + session.getAttribute("loggedIn");
         }
         return "Login failed";
     }
